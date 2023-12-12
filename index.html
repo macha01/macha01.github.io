@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Group 1</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap">
+    <style>
+        body {
+            background-color: #3F3B6C;
+            color: #FFFFFF;
+            font-family: 'Yusei Magic', sans-serif; /* Use Y2K Font */
+            margin: 0;
+            padding: 0;
+            transition: background-color 0.5s;
+        }
+
+        header {
+            text-align: center;
+            padding: 50px 20px; /* Increase top padding to move the header down */
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #624F82;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            transition: background-color 0.5s, transform 0.5s; /* Add transition for background color and transform (slide) */
+        }
+
+        nav a {
+            color: #FFFFFF;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            transition: color 0.5s;
+        }
+
+        nav a:hover {
+            color: #FFD700;
+        }
+
+        nav a.active {
+            background-color: #361F4A; /* Highlight active link background color */
+        }
+
+        nav.closed {
+            transform: translateY(-100%);
+        }
+
+        .toggle-button, .close-button {
+            background-color: #1B1430;
+            color: #FFFFFF;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            transition: background-color 0.5s; /* Add transition for button background color */
+            z-index: 1001; /* Ensure the buttons are above the navigation bar */
+            position: fixed; /* Fix the buttons to the viewport */
+        }
+
+        .toggle-button:hover, .close-button:hover {
+            background-color: #361F4A; /* Change button color on hover */
+        }
+
+        section {
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        section {
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        section p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #FFD700;
+        }
+
+        h2::after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 2px;
+            background-color: #FFD700;
+            margin: 20px auto;
+        }
+
+        img {
+            width: 100%;
+            max-width: 600px;
+            margin: 20px auto;
+            display: block;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <button class="toggle-button" onclick="toggleNav()">Navigation Bar</button>
+    
+    <nav class="closed">
+        <a href="index.html">Main Page</a>
+        <a href="home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <header>
+        <h1>Welcome to Enthrall Website</h1>
+    </header>
+
+    <section>
+        <p>This is the main page. Click on the navigation bar to explore different pages. The website is still a work in progress.</p>
+
+        <h2>Enthrall: A Mystical Elixir</h2>
+        <p>Unleash your inner enchantress with Enthrall, a luxurious perfume that captivates the senses and leaves a lingering trail of mystery and intrigue.</p>
+        <p>The fragrance opens with a hypnotic blend of sparkling citrus and seductive florals, including delicate rose, jasmine, and ylang-ylang. The heart of the perfume reveals a warm and earthy accord of sandalwood, patchouli, and vetiver, adding a touch of sensuality and depth.</p>
+        <p>The enchanting journey concludes with a lingering trail of amber, musk, and vanilla, leaving you feeling irresistible and confident.</p>
+
+        <!-- Image Slot -->
+        <img src="https://chat.google.com/u/1/api/get_attachment_url?url_type=FIFE_URL&content_type=image%2Fpng&attachment_token=AOo0EEUd9aCBz6NgxABH8b97lY6XT6ENoE4iFyCtLgIwxGB%2BQtRQlz5JeyWzqgQ45AOW9MsREp0YxXmTdWPBPyo3c7Cl9EjQBCqq%2FOTbk3rXGeWzFasu1HvjdjFoYq%2FESOhdWO%2B1t0ZhgdfwdMKSZb8JIUurL7TeZQAyOUTQOkwmftvwDzXJLcnwq7rOYgBzo5DFozkH9CRm5MgnKOHuDpow%2Fbxm0w2AKThQIumY56XeVGvChKVyjnQoLrDXH3CN2zioRqkaWhdJMb16BCkbPOTgq3wjeMAZHAzUJ6ItKLUby%2BaGGctE7B43I3MDXTewCmZe0BLAUGf8hLKKlS6ETYEbT35SKt794HGww242ibQBXghzn4udOoOeeNNS9klSJqy51nC9ehCY1BDi2sDkonnbSvjkxW%2BU%2BsbWCK6Rmk0Fru9geFiszVno0zN9uVvmnOoQwPiZ5K8rBDn4kzIs3HQtqzBTeJvcoFpoSyj9k3EpRVPr3JaGqZCbsRaQv9tgCsegQYZgtm9Bdzmx0lrj3K1SHSWGHyrGnQSPd1Q%2FF1sIyZso8h8WzPciOEbFo1mWsvFAhZM%3D&sz=w512&authuser=1" alt="Enthrall Perfume Image">
+
+        <h2>Enthrall: Purple Aura</h2>
+        <p>Behold the enchanting bottle of Enthrall, a luxurious perfume that will captivate your senses and leave you feeling irresistible.</p>
+        <p>The bottle is a work of art in itself, with its round, smooth shaped bottle and mesmerizing purple color of the perfume. It's a perfect reflection of the fragrance's captivating essence.
+            The Purple Aura is a symbol of attraction and desire, as well as a window to the soul. </p>
+        <p>The Purple Aura is a symbol of attraction and desire, as well as a window to the soul. It's a provocative invitation to discover the enchanting world of Enthrall.
+            The purple color of the perfume is associated with luxury, elegance, and mystery. It's a perfect complement to the fragrance's intoxicating scent.
+            When you hold the bottle of Enthrall in your hands, you can feel its magical energy. It's a promise of a captivating experience that will leave you feeling enchanted and empowered.</p>
+
+        <!-- Image Slot -->
+        <img src="https://chat.google.com/u/1/api/get_attachment_url?url_type=FIFE_URL&content_type=image%2Fpng&attachment_token=AOo0EEXrU6BQWrkJOsgCFjEQaeof7%2FvpUoEhyS%2F%2F%2F0lXCBzlEY2gWO70dXgMCM6qUa%2FJmwlSb%2BviVPnUllSylMvQONawZhuT6MWOAys9D4gjuXpIsng73Cy0rs3AiJhw1lasHUxLhNbmAxYIrXgtM5OmDp8LEE1feGCI5Lht9aYSVgkuRWese4ZuAIwzbCJfneawzAoL86GPc0Odys48sJyVPp%2BuHU4aDsyASTLRuPfpN7qZBX1XrNaW4j6udgQbvro%2FiTTKvlg0Sah3ilx1BSJJl1DSSqB6n85CnR3mLQwwH%2Fhq08rkasLjPlcL1L0AwnGS%2F5q0D264MHhlPM66QPVJNFn5g2DWOK7hAwGRT1qF9pHXv3LOoxzuhTRe%2F1mZbsgR7fYkOOti7WYfPENNvzwwzl9T8UdcWK%2BMF1u8zE1DLCgMRDdwbGAAgOHfJ8fcb1G%2FIfXQjlFe0YUw3CMlyPC9RoSktsuNvKnOfUWb1g3XgQJfALdqqJ4KH8hYbE%2FmMNmRd7oQaXiXMo3rpmLBZnGKMDEHzt6laKslvXDImHg4WrDnponnn09sCtEVXkzWVOA2tA4zTdueN0NZRef%2Bke2hgPc%3D&sz=w512&authuser=1" alt="Enthrall Perfume Image">
+   
+        <h2>Enthrall: Enchanting Whisper</h2>
+        <p>Behold Enchanting Whisper, a luxurious perfume that captivates the senses with its alluring scent and enchanting bottle.</p>
+        <p>The fragrance opens with a delicate whisper of sparkling citrus and sparkling white flowers, evoking a sense of freshness and femininity. The heart of the perfume reveals a warm and sensual accord of jasmine, rose, and ylang-ylang, adding a touch of mystery and romance. The enchanting journey concludes with a lingering trail of musk, sandalwood, and vanilla, leaving you feeling confident and irresistible.</p>
+        <p>The bottle of Enchanting Whisper is a work of art in itself, with its sleek, purple design and mesmerizing eye logo. The purple color evokes a sense of luxury, elegance, and mystery, perfectly complementing the fragrance's intoxicating scent. 
+            Enchanting Whisper is the perfect perfume for the woman who wants to leave a lasting impression. It's a fragrance that's both captivating and sophisticated, sure to turn heads wherever you go.</p>
+
+        <!-- Image Slot -->
+        <img src="https://chat.google.com/u/1/api/get_attachment_url?url_type=FIFE_URL&content_type=image%2Fpng&attachment_token=AOo0EEWYRmbex3wSlw%2BRabxRq1VfLt40viGLeYuJmsBsUYkzlrFDmZ0Rm6XnKUs6yqkDAt5ADrR6gtoDl%2FkEIi92EY5X2FcfPlTkWd%2F4iTcYQ9DKcHj2eMvBu1CmYoBgJa9nDBjJmQGLbIY0l44Xe94792y7ZBDR%2FVqo2VVqrlxVrIAW3cbzS5IN3aXYO65O54LhTQX5DMotnrgXf8yAK9Jxlb5NBHCBIpIcPgJXWQ%2BLoABJNQL1aEbz00UduvbVGDbEVeAzrnOzW2i5lEUwUPeBp9H5Y0xyEda5fiYG81dOIegqMfsEygn93wJliPTnqwkpxePYvpaDNOWigSs7pCK0YpSK7lvbBQHSFz8yr3cBSdtTNwY7kBOmLDIypLC8Ld8zhtAAiZmVc%2BtkPJyzTnhcdSudtzhIZ7GFIRiX%2B3%2FS0slBQzxPDnOoUrx%2Fe3MTVmwPiWpOccvR0H2Lmk3EuGZOVMhTlyDzCvPzZjIMjKvRrQ8nTGFD22%2BQR2BoGm%2FihoxEC1%2FJg%2Bj0IhUNRcSYrvkuXuF3qozjkDQQIumhKrq4PHu4ZKbWyrgGSqqcNUjnrJJwRt0ucTFYNDdPEA6gnSVEcZmA&sz=w512&authuser=1" alt="Enthrall Perfume Image">
+   
+        <h2>Enthrall: Midnight Muse</h2>
+        <p>A fragrance whispered in the velvet of night, a secret whispered on the wind... Midnight Muse.</p>
+        <p>This captivating perfume unfolds with a mesmerizing dance of sparkling citrus and midnight blooms. Each drop, a dewdrop kissed by moonlight, awakens a cascade of emotions. Delicate rose shimmers under the pale light, its sweet whispers entwined with the intoxicating embrace of jasmine and ylang-ylang. As the night deepens, the fragrance reveals its hidden depths. Warm sandalwood and earthy patchouli weave a spellbinding tapestry, their rich textures infused with a touch of vetiver's smoky allure.</p>
+        <p> Finally, a lingering whisper of amber, musk, and vanilla envelopes you in a warm, sensual embrace. Midnight Muse is for the woman who embraces the darkness, who finds beauty in the shadows. It's a fragrance that empowers and enchants, leaving a trail of magic wherever she goes.</p>
+
+        <!-- Image Slot -->
+        <img src="https://chat.google.com/u/1/api/get_attachment_url?url_type=FIFE_URL&content_type=image%2Fpng&attachment_token=AOo0EEXriwQ7OoJq6%2F%2FEWNJC5Qlh4K6Ci0wnYkqQTixYRa3oWgxADMc9n1GlOe65qD0HoKuHgksjee7U%2BjgtXLOPooR6MTWyf8AabBojnrkGhQJAcyZYtmzuoL6gSkfhHQRBy4kmj4g5tRaOybgU3QPkIWn5QFO5RerUGuoeMmWl0BPPmYqe1AmpJqssWryztCb%2BBxDU6Xl7aSp70lhXhIlnNd%2BcvPoI681TVVVua9Fi9mH5kdoDwTRMw%2FBOCio%2BozW4MhlYVnTHPHz1xtM%2FCxxi1GzpLdzLrcRLCFNgFknW7x68TrOw7xrx2lCzkDbyOpPwMkrQuJ8%2BL6EkHuonBs10%2BGFd%2Bvt05YcnPb4aEA8Re2q7xbzcc3UcTvz9Q%2F%2BlSzx%2BKFk9OkKHoY7Hd1Jyyzd%2Bk3mHFgFjCSNvuIn%2Fe%2F%2Fkf12R0U6Vu1RO8wv%2FWWZgtU5H1scJ%2FVYw3WrX9maaviSc0j4VYDekBhOzYzcoZ788wdR2Tw3e%2FHlnFqCn12r4pvblgAtd8FoiNn8VvQ%2BQQyjg2CVe54OcQVRBmngFDa5ZEamqDRFi8rm%2F%2F0X%2FHkx96bwxzV%2F6lcUj4xi%2BiQh8i4%2Bf4m2Dxg%3D%3D&sz=w512&authuser=1" alt="Enthrall Perfume Image">
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Enthrall. All rights reserved.</p>
+    </footer>
+
+    <script>
+         function toggleNav() {
+            document.querySelector('nav').classList.toggle('closed');
+        }
+
+        // Set active class for the current page
+        document.addEventListener('DOMContentLoaded', function () {
+            var path = window.location.pathname;
+            var page = path.split("/").pop();
+
+            if (page === "") {
+                page = "index.html";
+            }
+
+            var links = document.querySelectorAll('nav a');
+
+            links.forEach(function(link) {
+                if (link.getAttribute('href') === page) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

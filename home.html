@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"> <!-- Swiper CSS link -->
+    <style>
+        body {
+            background-color: #3F3B6C;
+            color: #FFFFFF;
+            font-family: 'Yusei Magic', sans-serif; /* Use Y2K Font */
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            text-align: center;
+            padding: 50px 20px 20px; /* Increase top padding to move the header down */
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #624F82;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: #FFFFFF;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            transition: color 0.5s;
+        }
+
+        nav a:hover {
+            color: #FFD700;
+        }
+
+        nav a.active {
+            background-color: #361F4A;
+        }
+
+        section {
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .swiper-container {
+            width: 80%; /* Adjust the width as needed */
+            max-width: 600px; /* Set a maximum width to maintain responsiveness */
+            margin: 0 auto; /* Center the swiper container */
+        }
+
+        .swiper-slide {
+            overflow: hidden;
+            border-radius: 8px;
+            opacity: 0; /* Initially set opacity to 0 */
+            visibility: hidden; /* Initially hide the slide */
+            transition: opacity 0.5s ease-in-out, visibility 0s linear 0.5s; /* Fade in transition with a delay */
+        }
+
+        .swiper-slide-active,
+        .swiper-slide-next {
+            opacity: 1; /* Make the active and next slides visible */
+            visibility: visible; /* Show the active and next slides */
+            transition-delay: 0s; /* Remove delay for the active and next slides */
+        }
+
+        .swiper-slide img {
+            width: 100%; /* Set the width to 100% to make images responsive */
+            max-width: 300px; /* Set a maximum width for the images */
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .swiper-slide:hover img {
+            transform: scale(1.05);
+        }
+
+        .swiper-pagination-bullet {
+            background-color: #FFFFFF;
+            width: 10px;
+            height: 10px;
+            opacity: 0.7;
+        }
+
+        .swiper-pagination-bullet-active {
+            background-color: #FFD700;
+            width: 14px;
+            height: 14px;
+            opacity: 1;
+        }
+
+        .swiper-button-next, .swiper-button-prev {
+            color: #FFFFFF;
+            font-size: 24px;
+        }
+
+        .swiper-button-next:hover, .swiper-button-prev:hover {
+            color: #FFD700;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to Enthrall's Home Page</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Main Page</a>
+        <a href="home.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <section>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="https://chat.google.com/u/1/api/get_attachment_url?url_type=FIFE_URL&content_type=image%2Fpng&attachment_token=AOo0EEVHwGs3Rtt4Nrr9vCCxXd70kVwfSsoYN1MHJEzi4C7Yaq0ieU76zv3x%2BPnv57S5vA4mU6cxJVe%2FnrWtYDcNpkk9Vk052uSnZEpsCeYLGSkeUciBwGhkqdTtmYXbBT3O3%2BYbxH4%2B7nQPdejlhuSMjne5%2BUJazQTQ52spbJOgISANTWhImxSOGiFd%2FotI6GDm7xWA8xskwUxFwHrOl%2FxqeIaLT2gqVkQ%2FEoKk0GZT8USZpo6DJh9B5WzcMgfZhe0w07viIXgjxgTfTs56lJEEzUp9PKOw9j9z%2B9Acc%2FmKu%2FxAqoE0ff5QGfHW9XwcGchZ4iuZH0%2F22rd8D88BZJrWq%2BeHqJ3O%2B4ZtvB3V22zoTzo3lsojzqNpi7MKwPyyZj672UEg%2F1bF0Up3UWi15Nl1JoZcmscesP4QiyDhX3ZV5ZVYA8FA9%2BXwMwd9Z3KAdzX%2F84IbnKV6rDpBWAl4CGEoJAZTRaGIHSLUfX2iNhYooww52EKjHGO2CtU13rhMt0Lnd0eLHJjicl3bDsTj1iQdBk2eukYNOAkcG1Vne%2B9g2sKDVog6Ey4fCU920Q4ZEw%3D%3D&authuser=1&sz=w1866-h956" alt="Image 1">
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://chat.google.com/u/1/api/get_attachment_url?url_type=FIFE_URL&content_type=image%2Fpng&attachment_token=AOo0EEU8fIJ1NFPu0cIPpyilqM%2Bbr9e0iyv2OR4tsJ0sQfCdDDwe07kMeYqm8GLCY87Yn7Ve1ZiPKN6QHpE6GW27C2xqxhiJsQinwC%2F0F%2FTEa63AK2k7XQUu16iESuABlnkZeEurNjUvaUuGaeM5sW0HmiyFvyNRM0%2F0JQzvcwrKIb1hlzC1vMNxRHxnB2IMjCZ8lPddE3LM3CEyPFtq2C1sf41I9TC33if80dTDGAHq6ldaqIC35WVyVkhn%2FDORK7v88oxD6oRFQl8T8m2FtkeEwnbbq8o9KkXBF1ERk4pD8N6tVsnHDJWbSTPzATC5aN2WB6A7ipl4Yzl8c8XK1YN0cZUUdG%2BaAdrydQJBJuJxnD7JRmb6d1w8OOolx0xwcWBSlUA0NUf4oeP4cQXrwUd%2Fv1huONrz3Jkl%2BfJLwS0afZsACqvpsmu83%2FVgDosZTZ0YKt8XE0GyFtEG8ZW4EvHkcm4X9tUit02Kn1tpi0TwZ3EyjLJCWHM3uGg3Ml0s5jKRkpq3BHeP84bWhDS2HDwY%2BbDsZkVWUSvhSfmdbqLjPe34mO8yIeuRXXSQEO0TSJfSIomMB3brNJKJEQzu4wxD8u4%3D&authuser=1&sz=w1866-h956" alt="Image 2">
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://chat.google.com/u/1/api/get_attachment_url?url_type=FIFE_URL&content_type=image%2Fpng&attachment_token=AOo0EEX1m6tkyFlhr2tOXdK7nmQuYWXnpGxM0oLqjmz7DdSdOmHK%2FoON9LFhawzHqcVbAZ2yxgtW6Lznzl7ivM7oyxhwU7g%2BVWqC1oCaQ0b6AOLc6jjqXqu%2Fl8fUF%2FTZAuB%2Ftw8Rhhh6RHIV7dTgiiM6Cc4mfvmhibOSyO64ys%2FIR02nrNV1udRg%2BqDV3Sy95N6qepoIbfwW%2B1Tr98APlaUyFxA%2BpIOObesuaKrszIJgLFKUDXDsJBCoApK1ySDgh%2BdSYNrl%2FooImotZgJV1Er%2BkFS7ViITVW5x1SiXPKw5u8HoGZLGUL%2B%2BHwptfs%2BLFY0JXQ%2BHxkzAsIIWpO2qTF5DvmqUpc5xOyP3RwUVnOJ339906LVE6xpW8lU9%2BAGitLlSO6rfhma6rTCcc0nhSUXNqf20NMQhB2Uf5d0KX5k%2Fycs2afeJJErsmtWA68yZFORsApJ6vyHYvYfKo5WkEA%2BhvebGZVHAxK8iGNXmBNmVryX3Vokk7r6nnFUWaVt%2BcLc0rgphq0fJyHdUFto3MJiJ%2BYu6IESTftwCxqm4Jsigr5xM8XZiS5Ad9nntg2p1svz0JVmG83c2HpnKzlxocRhPO3fo%3D&authuser=1&sz=w1866-h956" alt="Image 3">
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://chat.google.com/u/1/api/get_attachment_url?url_type=FIFE_URL&content_type=image%2Fpng&attachment_token=AOo0EEW%2FULN81gJOK2Z0PDbdTKx5Td22UdAZhAp8mdbxKeR2LQraiTzkchDrj3eUbMSXiwKYHayYczPv9ONqCJL2x1h7GV9gV1YC%2BO5QygQA8LUcrIbbJ2jn6YXyvYhmm%2BhCh0HnFu06fRPELSuCNv7mHmKbV%2FtJURPNZGiUQjtsjerCzCFzFEuRdAcudhdC7w07%2F40aPsLjIqWaygZeRGzwv1XUWGTdB1SIPr7KHOofp8%2BaST7%2B6aFOgxJvmy5%2F5DOcH%2FN%2BBIS%2Bv7Vdpa%2Fn1s0pppoDSKmvFF9N%2FHDp%2BehIxB1GyzhEKkn2Ep0pAWsf5xo3Dbuy4fLEymtXekKSm0e6%2Bs4dHFB2e5aV%2FMn%2FsLcX7%2Ftsi4M07JJarqcO6yjaPBSX5BLIe5ARefbQL%2FEYW9qZUNiD7IH7jwN2hVou203dz0JFjdPv6Cdj%2FE1X0lW%2F1QleOmJsIn7VfS4STE5VDC4A77nFwiC0nYjiGeqkMnxgJZHnmNX6a9AbndDPKDv85LY4JQv8ooPc4rF2fV6zZUfLpQDMGdaXzu8Lef%2BZ1m9hsc9biWzErY1z9yafgU%2FXBFC8bUUBRWnwGu2OUtWKjNGAOY9wu2Vi&authuser=1&sz=w1866-h956" alt="Image 4">
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://chat.google.com/u/1/api/get_attachment_url?url_type=FIFE_URL&content_type=image%2Fpng&attachment_token=AOo0EEUQWpIlbfJ6SfF8XgMEC7OOOa7i368b4CKF9vRipSmGL6FHoDQ%2FrekKkV%2BktpoB2vDPnIVhw65xBLVh2by70zOZfVZBkIFnbex1w4gtKdOSrUF8rkhqK1iZSrwKM1Gp88D2H53x7gxF9vZ1r19a%2BkRXeYQeLz%2FcdxtgMws7rP1KZTfIrXHwi2e4c2ljEneYf1DudqNxPvYevVkufMKRl3VuhOE6xoGoxOE9BdTAe6%2Bu%2B3kkORJwoh9bpmNcjMlPC0FjpiVUbnxdh9REB1BnMM2%2BvHG63sSgskAdGsB1dG0uZtTDvxTaTPDkhXty1is0ksOtqaUEOYufp8YDWDmeMg2xJWko9MOg%2BCIyvGnAJFAMEuLFm3C3ODWJZaF2SmL4nxOQo6F33JEGvtG2cTrzBAQ59XXn4Odcec%2Bf3Qmkj9pQk221spEJGjqLJIZw5zcRB3Dc581S4n7B5cg2MBqs%2BtAMoOaH2c42dD1DF%2F4gevw17bbg7TXa73nAdOwiM2a2NEjGlD5v7l32hujsvFZTBW45RIvMMhj760G5hyrM%2BP%2BFgDKkM6txKcyg3xyPac8wUYZvqTkzoq%2B1IQyMHhtTAg%3D%3D&authuser=1&sz=w1866-h956" alt="Image 5">
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://chat.google.com/u/1/api/get_attachment_url?url_type=FIFE_URL&content_type=image%2Fpng&attachment_token=AOo0EEXB7Ik%2BGh81C1PtQ3P8fSOPpCPtXlZt%2BPModu2A84c2VN1j8L86wo27qrcD0F4HpVBJDj6hCoSkxsx163oSEaxojdGhOTDMZgRBRNPqExggit4FcdmqCfQI73A1KBHBPmmU43AA9SnATNkZ0MSpbs%2FZLpbRi45M5xcZ9O3EvMRyr0QXavHw%2BbXfZ3h7hsqte84Q63HX0G%2FdJIwiTKgeaDvYBtfEcsKzmS66ymGmZj%2BWOOCJsdHtdGpYQmg8MDEGgliXu3tQWdaY9V9KGJMa2HWsTKEaCt5SJUIQRXWEyP%2B6O9IjLmfjiUAo%2F5piFbsH7t56GfM%2FnTWShIl%2Fy2tn64ywJ9XHNr0p03TJw3tJc2N9U10tBEywRw4Vs3owt7bceQWKEtLlzbsZPPlu98GEGZZwk%2BZ14Bqx5npXg1l3W583AVRzEFmZxfgjV59S6P81KiZp1nbdgoXOwn9mAEHkhI2cA1MDhG47UxRv6HQqcc5Y9fE0D8s%2F4FTD1Z9Fp6qV0Waee%2BE7dGyduiV%2BlqcUEchg0oTnP4sD77Yph%2BcDFsbwIcgHPoHjxPQLOU2NZODSwZEJx06e2whLwdJvw0hd%2BX%2BKrQ%3D%3D&sz=w512&authuser=1" alt="Image 6">
+                </div>
+                <!-- Add more slides as needed -->
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Navigation -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+        <p>This is the home page content. The Images here is our products.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Enthrall. All rights reserved.</p>
+    </footer>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> <!-- Swiper JavaScript link -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var mySwiper = new Swiper('.swiper-container', {
+                // Optional parameters
+                loop: true, // Enable continuous loop
+                autoplay: {
+                    delay: 5000, // Delay between transitions in milliseconds (5 seconds)
+                    disableOnInteraction: false, // Enable navigation during autoplay
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                on: {
+                    init: function () {
+                        // Set initial opacity for the first slide
+                        var initialSlide = mySwiper.slides[mySwiper.activeIndex];
+                        initialSlide.style.opacity = 1;
+                    },
+                    slideChangeTransitionStart: function () {
+                        // Set opacity to 0 for all slides when transitioning to the next slide
+                        mySwiper.slides.forEach(function (slide) {
+                            slide.style.opacity = 0;
+                        });
+                    },
+                    slideChangeTransitionEnd: function () {
+                        // Set opacity to 1 for the new active slide
+                        var activeSlide = mySwiper.slides[mySwiper.activeIndex];
+                        activeSlide.style.opacity = 1;
+                    },
+                },
+            });
+        });
+    </script>
+</body>
+</html>

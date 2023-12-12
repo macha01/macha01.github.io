@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap">
+    <title>Contact Us</title>
+    <style>
+        body {
+            background-color: #3F3B6C;
+            color: #FFFFFF;
+            font-family: 'Yusei Magic', sans-serif; /* Use Yusei Magic font */
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #1B1430;
+            margin-top: 50px; /* Add margin to move the header down */
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #624F82;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: #FFFFFF;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            transition: color 0.5s;
+        }
+   
+        nav a:hover {
+            color: #FFD700;
+        }
+
+        nav a.active {
+            background-color: #361F4A;
+        }
+
+        .toggle-button {
+            background-color: #1B1430;
+            color: #FFFFFF;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            transition: background-color 0.5s; /* Add transition for button background color */
+            z-index: 1001; /* Ensure the button is above the navigation bar */
+            position: fixed; /* Fix the button to the viewport */
+            top: 10px;
+            right: 10px;
+        }
+
+        .toggle-button:hover {
+            background-color: #361F4A; /* Change button color on hover */
+        }
+
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #1B1430;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Contact Us</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Main Page</a>
+        <a href="home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="active">Contact</a>
+    </nav>
+
+    <main>
+        <h2>For Inquiries</h2>
+        <p>Gmail: TBD@TBD.com</p>
+        <p>Address: APEC Schools</p>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Enthrall. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+    <script>
+        function toggleNav() {
+            var nav = document.querySelector('nav');
+            nav.classList.toggle('closed');
+        }
+    </script>
+</body>
+</html>
